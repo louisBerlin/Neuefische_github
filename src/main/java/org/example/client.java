@@ -11,4 +11,12 @@ public record client(String name, int age) {
     public int age() {
         return age;
     }
+
+    @Override
+    public String toString() {
+        return "client{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }
